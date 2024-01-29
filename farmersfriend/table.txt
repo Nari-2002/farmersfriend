@@ -1,0 +1,7 @@
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    post_title VARCHAR(255),
+    post_description TEXT,
+    post_image VARCHAR(255),
+    video_url VARCHAR(255)
+);

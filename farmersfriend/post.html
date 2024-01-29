@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Post</title>
+    <style>
+        /* Your CSS styles for the form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add New Post</h1>
+    <form action="submit_post.php" method="POST" enctype="multipart/form-data">
+        <label for="post_title">Post Title:</label>
+        <input type="text" id="post_title" name="post_title"><br>
+
+        <label for="post_description">Post Description:</label>
+        <textarea id="post_description" name="post_description"></textarea><br>
+
+        <label for="post_image">Post Image:</label>
+        <input type="file" id="post_image" name="post_image"><br>
+
+        <label for="video_url">Video URL:</label>
+        <input type="text" id="video_url" name="video_url"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
